@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "MsdnRedirector",
+    "version": "1.0",
+    "description": "Redirects polish MSDN pages to en-US",
+    "permissions": [
+        "webRequest", 
+        "webRequestBlocking",
+        "http://msdn.microsoft.com/*",
+        "https://msdn.microsoft.com/*"
+    ],
+    "background": {                                      
+        "scripts": ["redirect.js"]         
+    }
+}
